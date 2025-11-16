@@ -1,0 +1,121 @@
+header{
+    width: 100% !important;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    z-index: 100 !important;
+    position: sticky;
+    background-color: white;
+    top: 0;
+}
+.header{
+    width: 100%;
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+}
+.options{
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    direction: ltr;
+    align-items: center;
+    text-transform: capitalize;
+    a{
+        font-family: notoRegular !important;
+        text-decoration: none;
+        color: var(--dark-blue);
+        transition: 0.15s;
+        &:hover{
+            color: var(--creamy);
+        }
+    }
+}
+.mobile-options__container {
+    display: none;
+    list-style: none;
+    position: fixed;
+    top: 88px;
+    bottom: 0;
+    right: -250px;
+    background: var(--custom-black);
+    opacity: 0.95;
+    width: 250px;
+    transition: 0.5s;
+    z-index: 10;
+}
+.mobile-options {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    li {
+        width: 100%;
+        transition: 0.15s;
+        &:hover {
+            background: var(--brown);
+        }
+    }
+    a {
+        font-family: notoRegular;
+        font-size: 1rem;
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: #fff;
+        text-align: left;
+        padding: 12px 40px;
+    }
+}
+.logo{
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 100%;
+    direction: ltr;
+    display: flex;
+    user-select: none;
+    
+    b{
+        color: var(--brown);
+        font-weight: 700 !important;
+    }
+    span{
+        font-weight: 400;
+        color: var(--light-brown);
+        font-family: loraitalic;
+    }
+}
+.option{
+    display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    svg {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media (max-width: 768px) {
+    .option {
+        display: block;
+    }
+    .options {
+        display: none;
+    }
+    .mobile-options__container {
+        display: block;
+    }
+    header {
+        box-shadow: -10px 1px 1rem 1px #ccc;
+    }
+}
+@media (max-width: 380px){
+    header{
+        height: 64px;
+    }
+    .mobile-options__container {
+        top: 64px;
+    }
+} 

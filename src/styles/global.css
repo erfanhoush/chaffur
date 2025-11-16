@@ -1,0 +1,70 @@
+:root {
+  --dark-blue: #232730;
+  --creamy: #F8D7A4;
+  --brown:#A55C30;
+  --blue:#19314B;
+  --light-brown:#C7763E;
+  --custom-black: #0c0c0c;
+}
+@font-face {
+  font-family: loraRegular;
+  src: url("/public/assets/fonts/lora/Lora-Regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: loraMedium;
+  src: url("/public/assets/fonts/lora/Lora-Medium.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: loraBold;
+  src: url("/public/assets/fonts/lora/Lora-Bold.ttf");
+  font-display: swap;
+}
+@font-face {
+    font-family: loraitalic;
+    src: url("/public/assets/fonts/lora/Lora-Italic.ttf");
+    font-display: swap;
+}
+@font-face {
+  font-family: notoRegular;
+  src: url("/public/assets/fonts/notosans/NotoSans-Regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: notoMedium;
+  src: url("/public/assets/fonts/notosans/NotoSans-Medium.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: notoBold;
+  src: url("/public/assets/fonts/notosans/NotoSans-Bold.ttf");
+  font-display: swap;
+}
+
+* {
+  font-family: loraRegular;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+body {
+  min-height: 100dvh;
+  margin: 0 auto;
+  /* overflow-x: hidden; */
+}
+.container {
+  max-width: 1194px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: #00000090;
+  cursor: pointer;
+  display: none;
+  z-index: 99;
+}
