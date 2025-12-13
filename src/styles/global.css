@@ -1,11 +1,14 @@
+@import "tailwindcss";
+
 :root {
   --dark-blue: #232730;
-  --creamy: #F8D7A4;
-  --brown:#A55C30;
-  --blue:#19314B;
-  --light-brown:#C7763E;
+  --creamy: #f8d7a4;
+  --brown: #a55c30;
+  --blue: #19314b;
+  --light-brown: #c7763e;
   --custom-black: #0c0c0c;
 }
+
 @font-face {
   font-family: loraRegular;
   src: url("/public/assets/fonts/lora/Lora-Regular.ttf");
@@ -22,9 +25,9 @@
   font-display: swap;
 }
 @font-face {
-    font-family: loraitalic;
-    src: url("/public/assets/fonts/lora/Lora-Italic.ttf");
-    font-display: swap;
+  font-family: loraItalic;
+  src: url("/public/assets/fonts/lora/Lora-Italic.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: notoRegular;
@@ -42,29 +45,53 @@
   font-display: swap;
 }
 
-* {
-  font-family: loraRegular;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-transform: capitalize;
+@theme {
+  --font-loraRegular: loraRegular;
+  --font-loraMedium: loraMedium;
+  --font-loraBold: loraBold;
+  --font-loraItalic: loraItalic;
+  --font-notoRegular: notoRegular;
+  --font-notoMedium: notoMedium;
+  --font-notoBold: notoBold;
+
+  --color-dark-blue: var(--dark-blue);
+  --color-creamy: var(--creamy);
+  --color-brown: var(--brown);
+  --color-blue: var(--blue);
+  --color-light-brown: var(--light-brown);
+  --color-custom-black: var(--custom-black);
+  
+  --breakpoint-mobile: 375px;
+  /* برای اضافه کردن رنگ hex جدید، اینجا اضافه کنید: */
+  /* --color-red: #ff0000; */
+  /* --color-green: #00ff00; */
 }
 
-body {
-  min-height: 100dvh;
-  margin: 0 auto;
-  /* overflow-x: hidden; */
-}
-.container {
-  max-width: 1194px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-.overlay {
-  position: fixed;
-  inset: 0;
-  background: #00000090;
-  cursor: pointer;
-  display: none;
-  z-index: 99;
+@layer base {
+  * {
+    font-family: loraRegular;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+  }
+
+  body {
+    min-height: 100dvh;
+    margin: 0 auto;
+    overflow-x: hidden !important;
+  }
+  .container {
+    max-width: 1194px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: #00000090;
+    cursor: pointer;
+    display: none;
+    z-index: 99;
+  }
 }

@@ -84,7 +84,7 @@ header{
     span{
         font-weight: 400;
         color: var(--light-brown);
-        font-family: loraitalic;
+        font-family: loraItalic;
     }
 }
 .option{

@@ -3,8 +3,17 @@
     height: 755px;
     background-image: url(/public/assets/images/bcg-services.webp);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        font-weight: 700;
+        font-size: 48px;
+        margin-bottom: 70px;
+    }
 }
 .service-container {
+    width: 100%;
+    margin: 0 auto;
 }
 .services-title{
     color: var(--brown);
@@ -17,6 +26,9 @@
         width: 303px;
         color: white;
         text-align: center;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
         h3{
             font-family: notoBold;
             line-height: 24px;
@@ -28,5 +40,22 @@
         p{
             font-family: notoRegular;
         }
+        img{
+            width: 104px;
+            height: 104px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .services{
+        height: min-content;
+    }
+    .services-features{
+        flex-direction: column;
+    }
+    .service-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }

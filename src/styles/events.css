@@ -1,0 +1,11 @@
+@layer utilities {
+  .events {
+    @apply w-[108px] h-[108px] text-white flex flex-col items-center justify-center *:font-notoRegular
+  }
+  .events h2 {
+    @apply text-6xl mb-3;
+  }
+  .events h4 {
+    @apply text-xl uppercase;
+  }
+}

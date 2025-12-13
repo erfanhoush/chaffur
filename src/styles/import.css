@@ -1,5 +1,9 @@
+@import "tailwindcss";
 @import "./global.css";
 @import "./header.css";
 @import "./info.css";
 @import "./about.css";
 @import "./services.css";
+@import "./fleet.css";
+@import "./events.css";
+@import "./testimonials.css"
