@@ -61,7 +61,7 @@
   --color-light-brown: var(--light-brown);
   --color-custom-black: var(--custom-black);
   
-  --breakpoint-mobile: 375px;
+  --breakpoint-mobile: 376px;
   /* برای اضافه کردن رنگ hex جدید، اینجا اضافه کنید: */
   /* --color-red: #ff0000; */
   /* --color-green: #00ff00; */

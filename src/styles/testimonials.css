@@ -96,10 +96,10 @@
     font-family: notoRegular;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .testimonials-swiper {
     display: none !important;
-  }
+    }
   .testimonials-mob_swiper{
     display: block !important;
   }
