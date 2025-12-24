@@ -1,3 +1,11 @@
+import Swiper from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+
 const navBar = document.querySelector(".mobile-options__container");
 const navBarBtn = document.querySelector(".option");
 const navBarIcon = document.querySelector(".nav-icon");
@@ -27,6 +35,7 @@ overlay.addEventListener("click", () => {
 });
 
 const fleetswiper = new Swiper(".fleet-swiper", {
+  modules: [Navigation, Pagination],
   slidesPerView: 3,
   spaceBetween: 29,
   pagination: {
@@ -42,7 +51,7 @@ const fleetswiper = new Swiper(".fleet-swiper", {
       slidesPerView: 1.2,
     },
     480: {
-      slidesPerView: 1.8
+      slidesPerView: 1.8,
     },
     640: {
       slidesPerView: 2.3,
@@ -59,14 +68,42 @@ const fleetswiper = new Swiper(".fleet-swiper", {
   },
 });
 const testimonials = new Swiper(".testimonials-swiper", {
+   modules: [Pagination],
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 });
 const testimonialsmob = new Swiper(".testimonials-mob_swiper", {
+   modules: [Pagination],
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 });
+
+const btn = document.querySelector("#toggle");
+const textarea = document.querySelector("#message");
+const textareaBox = document.querySelector(".textarea-box");
+
+let expanded = false;
+
+btn.addEventListener("click", () => {
+  expanded = !expanded;
+
+  textarea.style.height = expanded ? "120px" : "54px";
+  textareaBox.style.height = expanded ? "120px" : "54px";
+  btn.textContent = expanded ? "▲" : "▼";
+});
+
+const homeBtn = document.querySelector("#home-btn");
+
+homeBtn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+
+const now = new Date();
+
+const year = document.querySelector("#year");
+
+year.textContent = now.getFullYear();

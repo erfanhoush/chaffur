@@ -76,7 +76,6 @@ header{
     direction: ltr;
     display: flex;
     user-select: none;
-    
     b{
         color: var(--brown);
         font-weight: 700 !important;

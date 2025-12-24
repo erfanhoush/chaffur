@@ -1,11 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="shortcut icon" href="/public/assets/icons/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/src/styles/import.css">
-  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords" content="erfan_noob">
   <meta name="description" content="">
@@ -33,8 +32,8 @@
         </svg>
       </button>
       <ul class="options">
-        <li>
-          <a href="#home">home</a>
+        <li id="home-btn">
+          <a href="/">home</a>
         </li>
         <li>
           <a href="#about">about</a>
@@ -81,7 +80,7 @@
   <div class="overlay"></div>
   <main>
     <!-- #region info-->
-    <div class="info">
+    <div class="info" id="home">
       <img src="./public/assets/images/Vector.webp" alt="bcg-car">
       <div class="container info-deatails">
         <div class="info-car">
@@ -101,7 +100,7 @@
     </div>
     <!-- #endregion info-->
     <!-- #region about-->
-    <div class="about">
+    <div class="about" id="about">
       <div class="about-img">
         <img src="./public/assets/images/about.webp" alt="about">
       </div>
@@ -123,7 +122,7 @@
     </div>
     <!-- #endregion about-->
     <!-- #region services-->
-    <div class="services">
+    <div class="services" id="services">
       <div class="container service-container">
         <h2 class="services-title">services</h2>
         <div class="services-features">
@@ -168,7 +167,7 @@
     </div>
     <!-- #endregion services-->
     <!-- #region fleet-->
-    <div class="fleet">
+    <div class="fleet" id="fleet">
       <div class="container fleet-container">
         <h2>fleet</h2>
         <div class="swiper fleet-swiper">
@@ -369,7 +368,9 @@
         <div class="swiper-wrapper relative">
           <div class="swiper-slide">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui nec massa enim scelerisque scelerisque maecenas lectus. Tincidunt posuere nunc at amet, in. Enim ullamcorper lectus viverra donec. At faucibus nunc vel viverra massa malesuada leo iaculis tellus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui nec massa enim scelerisque scelerisque
+              maecenas lectus. Tincidunt posuere nunc at amet, in. Enim ullamcorper lectus viverra donec. At faucibus
+              nunc vel viverra massa malesuada leo iaculis tellus.
             </p>
             <img src="./public/assets/images/start.webp" alt="star">
             <div class="annie-mob">
@@ -380,7 +381,9 @@
           </div>
           <div class="swiper-slide">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui nec massa enim scelerisque scelerisque maecenas lectus. Tincidunt posuere nunc at amet, in. Enim ullamcorper lectus viverra donec. At faucibus nunc vel viverra massa malesuada leo iaculis tellus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui nec massa enim scelerisque scelerisque
+              maecenas lectus. Tincidunt posuere nunc at amet, in. Enim ullamcorper lectus viverra donec. At faucibus
+              nunc vel viverra massa malesuada leo iaculis tellus.
             </p>
             <img src="./public/assets/images/start.webp" alt="star">
             <div class="annie-mob">
@@ -391,7 +394,9 @@
           </div>
           <div class="swiper-slide">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui nec massa enim scelerisque scelerisque maecenas lectus. Tincidunt posuere nunc at amet, in. Enim ullamcorper lectus viverra donec. At faucibus nunc vel viverra massa malesuada leo iaculis tellus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui nec massa enim scelerisque scelerisque
+              maecenas lectus. Tincidunt posuere nunc at amet, in. Enim ullamcorper lectus viverra donec. At faucibus
+              nunc vel viverra massa malesuada leo iaculis tellus.
             </p>
             <img src="./public/assets/images/start.webp" alt="star">
             <div class="annie-mob">
@@ -405,18 +410,97 @@
       </div>
     </div>
     <!-- #endregion testimotinal-->
-     <!-- #region call-->
-     <div class="w-[1440px] h-[306px] bg-[url(/public/assets/images/call.webp)] bg-no-repeat bg-cover bg-[position:-150px_-160px] relative max-mobile:w-full max-mobile:bg-[position:-160px_0]">
-      <div class="absolute w-full h-full inset-0 bg-black/70 flex justify-center items-center text-white pr-50 *:font-notoRegular flex-col gap-2 *:text-center max-mobile:p-0">
+    <!-- #region call-->
+    <div
+      class="w-full h-[306px] bg-[url(/public/assets/images/call.webp)] bg-no-repeat bg-cover bg-[position:-150px_-160px] relative max-mobile:w-full max-mobile:bg-[position:-160px_0]">
+      <div
+        class="absolute w-full h-full inset-0 bg-black/70 flex justify-center items-center text-white pr-50 *:font-notoRegular flex-col gap-2 *:text-center max-mobile:p-0">
         <p class="text-[32px] max-mobile:text-[20px]">we offer the best you can imagine</p>
         <p class="text-[56px] max-mobile:text-[32px]">call Now for booking 01477 678905</p>
       </div>
     </div>
-     <!-- #endregion call-->
+    <!-- #endregion call-->
+    <!-- #region contact-->
+    <div class="h-[1069px] w-full flex justify-center items-center gap-[86px] flex-col" id="contact">
+      <b class="text-brown text-[56px]">contact</b>
+      <div
+        class="bg-[#E8EAEC] w-[727px] h-[709px] flex justify-center items-center flex-col gap-[22px] max-mobile:w-[343px] max-mobile:h-[520px] rounded-xl **:rounded-md">
+        <form action="#"
+          class="*:w-[493px] *:h-[54px] *:bg-white w-full flex justify-center items-center flex-col gap-[22px] **:outline-none max-mobile:*:w-[311px] max-mobile:*:h-[48px] *:p-2 **:placeholder:font-notoRegular">
+          <input type="text" placeholder="your name">
+          <input type="email" placeholder="email">
+          <input type="text" placeholder="type of car">
+          <div class="relative w-full overflow-hidden textarea-box transition-all duration-200 !p-0">
+            <textarea
+              class="w-full resize-none placeholder:capitalize p-2 pt-3 pr-8 transition-all absolute duration-200"
+              id="message" placeholder="your deatails"></textarea>
+            <button type="button" id="toggle"
+              class="absolute right-3 bottom-1/2 translate-y-1/2 cursor-pointer">▼</button>
+          </div>
+        </form>
+        <button
+          class="w-[245px] h-15 bg-brown text-white uppercase text-[18px] cursor-pointer transition-all duration-75 active:scale-[0.97]">send</button>
+      </div>
+    </div>
+    <!-- #endregion contact-->
   </main>
-  <footer></footer>
-  <script type="module" src="/src/scripts/app.js"></script>
-  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+  <footer class="bg-[#0C0C0C] **:font-notoRegular text-white">
+    <!-- #region lux-footer-top-->
+    <div class="flex w-full justify-center items-start gap-[153px] max-mobile:flex-col max-mobile:gap-22 container">
+      <div class="flex items-start flex-col gap-3 w-[263px] max-mobile:text-center max-mobile:items-center">
+        <div class="logo">
+          <b>Lux</b>
+          <span>Chaffeur</span>
+        </div>
+        <p>we are known for luxurious and
+          premium chaffeur services worldwide. We are simply the best
+          you can find.</p>
+        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem consectetur sagittis auctor.</p>
+      </div>
+      <div class="flex justify-center items-center gap-7 w-107 flex-col max-mobile:w-[299px]">
+        <h5 class="footer-tops">new letters</h5>
+        <p class="text-center text-[16px]">
+          subscribe to our news letter for updates, news and exclusive offers
+        </p>
+        <div class="flex gap-4 *:rounded-md max-mobile:flex-col items-center">
+          <input type="email" placeholder="email" class="bg-white w-69 h-13.5 outline-none text-black p-6">
+          <button class="bg-brown w-[135px] h-13.5 transition-all duration-75 active:scale-[0.97] cursor-pointer">subscribe</button>
+        </div>
+        <div class="flex gap-9.5 flex-row-reverse mt-15.5 *:cursor-pointer max-mobile:hidden">
+          <img src="./public/assets/svgs/insta.svg" alt="instagram">
+          <img src="./public/assets/svgs/twitter.svg" alt="twitter">
+          <img src="./public/assets/svgs/facebook.svg" alt="facebook">
+        </div>
+      </div>
+      <div class="flex flex-col gap-8">
+        <h5 class="footer-tops">contact</h5>
+        <div class="contact">
+          <img src="./public/assets/svgs/ic_round-location-on.svg" alt="location">
+          <p>2038 2nd Avenue, Las Vegas, United States</p>
+        </div>
+        <div class="contact">
+          <img src="./public/assets/svgs/contact.svg" alt="contact">
+          <pre>
+01477 342123
+01477 678905</pre>
+        </div>
+        <div class="contact">
+          <img src="./public/assets/svgs/email.svg" alt="email">
+          <p>info@luxchauffeur.com</p>
+        </div>
+      </div>
+       <div class="gap-9.5 flex-row-reverse mt-11 mb-9 *:cursor-pointer hidden max-mobile:flex">
+          <img src="./public/assets/svgs/insta.svg" alt="instagram">
+          <img src="./public/assets/svgs/twitter.svg" alt="twitter">
+          <img src="./public/assets/svgs/facebook.svg" alt="facebook">
+        </div>
+    </div>
+    <!-- #endregion lux-foote-top-->
+     <hr>
+     <p class="text-center text-[12px] p-2.5">© Copyright <span id="year"></span> · LuxChauffeur All rights reserved</p>
+     <!-- <div class="size-px"></div> -->
+  </footer>
+  <script type="module" src="./src/scripts/app.js"></script>
 </body>
 
 </html>

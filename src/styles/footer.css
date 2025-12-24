@@ -1,0 +1,8 @@
+@layer utilities{
+    .contact{
+        @apply flex gap-4 max-mobile:w-[231px];
+    }
+    .footer-tops{
+        @apply text-center text-brown text-[24px] pt-4;
+    }
+}
